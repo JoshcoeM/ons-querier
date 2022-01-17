@@ -1,0 +1,16 @@
+type Query{
+    order(orderId : Int!): Order
+}
+
+type Order{
+    shippingId: Int!
+    orderId: Int!
+    line1: String!
+    line2: String
+    city: String!
+    state: String!
+    zip: String!
+    productId: String!
+    description: String
+    quantity: Int!
+}
